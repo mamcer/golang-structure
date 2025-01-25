@@ -15,9 +15,7 @@ func (*Repository) GetMessageByID(id int) string {
 }
 
 func (*Repository) Save(m Message) {
-	return
 }
 
 func (*Repository) Delete(id int) {
-	return
 }
