@@ -5,8 +5,8 @@ import "testing"
 type MockRepository struct {
 }
 
-func (*MockRepository) GetMessageByID(id int) string {
-	return "pong"
+func (*MockRepository) GetMessageByID(id int) (string, error) {
+	return "pong", nil
 }
 
 func (*MockRepository) Save(m Message) {}

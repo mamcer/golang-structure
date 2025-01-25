@@ -9,5 +9,10 @@ func NewService(r repository) *Service {
 }
 
 func (s *Service) GetMessage(id int) string {
-	return s.Repository.GetMessageByID(id)
+	m, e := s.Repository.GetMessageByID(id)
+	if e == nil {
+		return m
+	}
+
+	return ""
 }
