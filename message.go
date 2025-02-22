@@ -17,6 +17,4 @@ type service interface {
 	GetMessage(id int) string
 }
 
-var (
-	ErrMessageNotFound = errors.New("requested message not found")
-)
+var ErrMessageNotFound = errors.New("requested message not found")
