@@ -11,8 +11,21 @@ test different source code structures in golang
     service.go      // business logic
     repository.go   // data access layer
 
-    go build main.go repository.go service.go handler.go message.go 
+## how to run
+
     export FLAT_PORT=5000
     export FLAT_DB_DRIVER_NAME=mysql
     export FLAT_DB_DATA_SOURCE_NAME="[user]:[password]@tcp([hostname]:[port])/[dbname]" 
+
+build
+
+    go build main.go repository.go service.go handler.go message.go 
     ./main
+
+or run directly 
+
+    go run .
+
+curl ping
+
+    curl -s 'http://localhost:5000/ping' | jq .
