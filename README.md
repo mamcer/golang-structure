@@ -5,17 +5,21 @@ test different source code structures in golang
 
 ## flat 
 
-    main.go         // entry point
-    message.go      // model
-    handler.go      // http handlers
-    service.go      // business logic
-    repository.go   // data access layer
+```
+main.go         // entry point
+message.go      // model
+handler.go      // http handlers
+service.go      // business logic
+repository.go   // data access layer
+```
 
 ## how to run
 
-    export FLAT_PORT=5000
-    export FLAT_DB_DRIVER_NAME=mysql
-    export FLAT_DB_DATA_SOURCE_NAME="[user]:[password]@tcp([hostname]:[port])/[dbname]" 
+```
+export FLAT_PORT=5000
+export FLAT_DB_DRIVER_NAME=mysql
+export FLAT_DB_DATA_SOURCE_NAME="[user]:[password]@tcp([hostname]:[port])/[dbname]" 
+```
 
 build
 
