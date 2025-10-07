@@ -36,4 +36,6 @@ go run .
 
 curl ping
 
-    curl -s 'http://localhost:5000/ping' | jq .
+```bash
+curl -s 'http://localhost:5000/ping' | jq .
+```
