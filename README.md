@@ -23,8 +23,10 @@ export FLAT_DB_DATA_SOURCE_NAME="[user]:[password]@tcp([hostname]:[port])/[dbnam
 
 build
 
-    go build main.go repository.go service.go handler.go message.go 
+```bash
+go build main.go repository.go service.go handler.go message.go 
     ./main
+```
 
 or run directly 
 
