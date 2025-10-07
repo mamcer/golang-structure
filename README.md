@@ -15,7 +15,7 @@ repository.go   // data access layer
 
 ## how to run
 
-```
+```bash
 export FLAT_PORT=5000
 export FLAT_DB_DRIVER_NAME=mysql
 export FLAT_DB_DATA_SOURCE_NAME="[user]:[password]@tcp([hostname]:[port])/[dbname]" 
