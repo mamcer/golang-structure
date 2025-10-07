@@ -30,7 +30,9 @@ go build main.go repository.go service.go handler.go message.go
 
 or run directly 
 
-    go run .
+```bash
+go run .
+```
 
 curl ping
 
